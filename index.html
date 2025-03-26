@@ -15,70 +15,112 @@
 
 <body>
   <nav class="navbar">
-    <ul class="nav-list">
-      <li class="nav-item"><a href="#">About</a></li>
-      <li class="nav-item"></li><a href="#">Learning Path</a>
-      <li class="nav-item"></li><a href="#">Contact</a>
+    <ul class="nav__list">
+      <li class="nav__item"><a href="#about">About</a></li>
+      <li class="nav__item"><a href="#learning">Learning Path</a></li>
+      <li class="nav__item">
+        <a href="#contact">Contact</a>
+      </li>
     </ul>
   </nav>
 
   <header>
     <div class="header">
-      <h1 id="header__text">Hello, I am Mio Ebisu.</h1>
+      <h1 id="js-typing-animation">Hello, I am Mio Ebisu.</h1>
     </div>
   </header>
+  <div class="div-empty"></div>
   <main>
     <!-- About myself and why I want to become a web developer -->
-    <section class="about">
-      <p class="about__text"></p>
-      <p class="about__text"></p>
-      <ul class="about__images">
-        <!-- infinite scroll gallery -->
-        <li class="about__item"></li>
-        <li class="about__item"></li>
-        <li class="about__item"></li>
-        <li class="about__item"></li>
-        <li class="about__item"></li>
-        <li class="about__item"></li>
-        <li class="about__item"></li>
-        <li class="about__item"></li>
-        <li class="about__item"></li>
-        <li class="about__item"></li>
-        <li class="about__item"></li>
-      </ul>
+    <section class="about" id="about">
+      <h1 class="js-show-text">About Myself</h1>
+      <p class="about__text">
+        text<br>
+      </p>
+      <br>
+      <p class="about__text">
+        text</p>
+
+      <div class="about__images">
+        <ul class="about__list">
+          <!-- infinite scroll gallery -->
+          <li class="about__item"><img src="images/shrine.jpg" alt="watercolour drawing person"></li>
+          <li class="about__item"><img src="images/swimming2.jpg" alt=""></li>
+          <li class="about__item"><img src="images/view.jpg" alt=""></li>
+          <li class="about__item"><img src="images/swimming.jpg" alt=""></li>
+          <li class="about__item"><img src="images/tokyo.jpg" alt=""></li>
+          <li class="about__item"><img src="images/pink.jpg" alt=""></li>
+          <li class="about__item"><img src="images/Lifting.png" alt=""></li>
+          <li class="about__item"><img src="images/mioebisu.jpg" alt=""></li>
+          <li class="about__item"><img src="images/pink.jpg" alt=""></li>
+          <li class="about__item"><img src="images/ramen-large.jpg" alt=""></li>
+          <li class="about__item"><img src="images/shrine.jpg" alt=""></li>
+          <li class="about__item"><img src="images/sign-small.jpg" alt=""></li>
+          <li class="about__item"><img src="images/ボート.jpg" alt=""></li>
+          <li class="about__item"><img src="images/tokyo.jpg" alt=""></li>
+        </ul>
+      </div>
     </section>
+    <div class="div-empty"></div>
+    <h1 class="js-show-text">Why Web developer? </h1>
+    <p class="about__text">text
+
+    <p class="about__text">
+      text
+
+    </p>
+
+    <p class="about__text">
+      text
+    </p>
+
+
+
+    <p class="about__text">
+      text
+    </p>
+    <div class="div-empty"></div>
+
     <!-- Learning path  -->
-    <section class="learning">
+    <section class="learning" id="learning">
+      <h1 class="js-show-text">My Learning Path</h1>
       <div class="learning__content">
-        <h2 class="learning__title">2023 June Bootcamp</h2>
+        <li class="learning__title">2023 <span>June</span> Software Engineer Python Bootcamp</li>
+        <ul class="learning__list"></ul>
+        <li class="learning__description">Azure Fundamentals AZ-900 certificate </li>
+        <li class="learning__description">Introduction of Python</li>
+        <li class="learning__description">text</li>
+      </div>
+      <div class="learning__content">
+        <li class="learning__title">2023 <span>Sep</span> Making website with Django by Django Girls</li>
+        <ul class="learning__list"></ul>
+        <li class="learning__description">Making a website using Python framework Django at Pycon</li>
+        <li class="learning__description">Deploy the website on Pythonanywhere.</li>
+        <li class="learning__description">text</li>
+      </div>
+      <div class="learning__content">
+        <li class="learning__title">2023 <span>Oct</span> SQL Fundamentals by Code First Girls</li>
         <ul class="learning__list"></ul>
         <li class="learning__description"></li>
         <li class="learning__description"></li>
-        <li class="learning__description"></li>
+        <li class="learning__description">text </li>
       </div>
       <div class="learning__content">
-        <h2 class="learning__title">2023 Sep Django Girls at Pycon</h2>
+        <li class="learning__title">2024 Google </li>
         <ul class="learning__list"></ul>
         <li class="learning__description"></li>
         <li class="learning__description"></li>
-        <li class="learning__description"></li>
+        <li class="learning__description">text</li>
       </div>
       <div class="learning__content">
-        <h2 class="learning__title">2023 Oct Code First Girls SQL</h2>
+        <li class="learning__title">2025 Jan Code Academy Full Stack</li>
         <ul class="learning__list"></ul>
         <li class="learning__description"></li>
         <li class="learning__description"></li>
-        <li class="learning__description"></li>
+        <li class="learning__description">text</li>
       </div>
       <div class="learning__content">
-        <h2 class="learning__title">2024 Google </h2>
-        <ul class="learning__list"></ul>
-        <li class="learning__description"></li>
-        <li class="learning__description"></li>
-        <li class="learning__description"></li>
-      </div>
-      <div class="learning__content">
-        <h2 class="learning__title">2025 Here I am!</h2>
+        <li class="learning__title">2025 Feb Founders and Coders Workshop</li>
         <ul class="learning__list"></ul>
         <li class="learning__description"></li>
         <li class="learning__description"></li>
@@ -91,29 +133,32 @@
       <p class="gatcha__text"></p>
       <div id="image__container"></div>
     </section>
+    <div class="div-empty"></div>
     <!-- Last Greetings  -->
-    <h2>Thank you for visiting and reading my website!</h2>
+    <h2 id="js-vibrate-text">Thank you for visiting and reading my website! </h2>
     <!-- contact  -->
-    <section class="contact">
-      <ul class="contact__list">
-        <li class="contact__item"><a href="http://"><img src="" alt=""></a></li>
-        <li class="contact__item"><a href="http://"><img src="" alt=""></a></li>
-        <li class="contact__item"><a href="http://"><img src="" alt=""></a></li>
-        <li>Email: ebisumio@gmail.com</li>
-      </ul>
-    </section>
+
     <!-- Footer -->
-    <footer>
-      <p>All right reserved Mio Ebisu</p>
-    </footer>
+
 
 
 
   </main>
-
-
-
-
+  <script src="script.js"></script>
 </body>
+
+
+
+<footer>
+  <section class="contact" id="contact">
+    <ul class="contact__list">
+      <li class="contact__item"><a href="http://">Instagram<img src="" alt=""></a></li>
+      <li class="contact__item"><a href="http://">GitHub<img src="" alt=""></a></li>
+      <li class="contact__item"><a href="http://">Homepage<img src="" alt=""></a></li>
+      <li class="contact__item">Email: ebisumio@gmail.com</li>
+    </ul>
+  </section>
+  <p>All right reserved. Mio Ebisu 2025</p>
+</footer>
 
 </html>
