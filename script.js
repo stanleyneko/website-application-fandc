@@ -48,3 +48,30 @@ document.addEventListener("scroll", () => {
 
   message.style.transform = `translate(${randomX}px, ${randomY}px)`;
 });
+
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+const gatchaButton = document.getElementById("gatchaButton");
+const imageArray = createImageArray();
+
+const createImageArray = () => {
+  const imageArray = [];
+  for (let i = 0; i < 20; i++) {
+    let images = `gatchaImages/${i}.PNG`;
+    return imageArray.push(images);
+  }
+  return imageArray;
+};
+
+const getRandomImage = () => {
+  const indexNumber = Math.floor(Math.random() * imageArray.length);
+  const newImg = new Image();
+  newImg.src = imageArray[indexNumber];
+
+  img.onload = () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+  };
+};
+
+gatchaButton.addEventListener("click", getRandomImage);

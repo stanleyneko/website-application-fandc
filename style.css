@@ -202,3 +202,7 @@ footer p {
   width: 20%;
   height: 20%;
 }
+
+#canvas {
+  border: solid 1px;
+}
