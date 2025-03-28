@@ -87,6 +87,7 @@ a:hover {
   margin: 10px;
   font-size: 20px;
   text-decoration: underline;
+  list-style: none;
 }
 
 /* Header */
@@ -218,4 +219,43 @@ footer p {
 
 #canvas {
   border: solid 1px;
+  z-index: 10;
+}
+
+#homepage__container {
+  margin: auto;
+  width: 200px;
+}
+
+#homepage-thumnail {
+  filter: grayscale();
+  width: 200px;
+  box-shadow: 10px 10px 10px rgb(34, 219, 182);
+}
+
+#homepage-thumnail:hover {
+  filter: grayscale(0);
+  transition: 0.01s;
+}
+
+.gatcha {
+  z-index: 10;
+  text-align: center;
+  margin: 200px;
+}
+
+.blinking {
+  animation: blinking 0.5s step-end infinite;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
