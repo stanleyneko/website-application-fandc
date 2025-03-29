@@ -36,7 +36,6 @@ const boxObserver = new IntersectionObserver(textAppear);
 document.querySelectorAll(".js-show-text").forEach((element) => {
   boxObserver.observe(element);
 });
-boxObserver.observe(document.querySelectorAll(".js-show-text"));
 
 //vibrate text when scroll//
 const message = document.getElementById("js-vibrate-text");
@@ -49,29 +48,35 @@ document.addEventListener("scroll", () => {
   message.style.transform = `translate(${randomX}px, ${randomY}px)`;
 });
 
+console.log("hi");
+//gatcha
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 const gatchaButton = document.getElementById("gatchaButton");
-const imageArray = createImageArray();
 
 const createImageArray = () => {
   const imageArray = [];
-  for (let i = 0; i < 20; i++) {
+  for (let i = 1; i < 20; i++) {
     let images = `gatchaImages/${i}.PNG`;
-    return imageArray.push(images);
+    imageArray.push(images);
   }
   return imageArray;
 };
+
+const imageArray = createImageArray();
 
 const getRandomImage = () => {
   const indexNumber = Math.floor(Math.random() * imageArray.length);
   const newImg = new Image();
   newImg.src = imageArray[indexNumber];
 
-  img.onload = () => {
+  newImg.onload = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    ctx.drawImage(newImg, 0, 0, canvas.width, canvas.height);
   };
 };
 
+// const test = () => {
+//   alert("hi");
+// };
 gatchaButton.addEventListener("click", getRandomImage);
